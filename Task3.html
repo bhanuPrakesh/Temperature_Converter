@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Task3.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="heading">Temperature Converter</h1>
+        <div class="row-direction">
+            <div class="col-direction">
+                <label for="temperature" class="side-heading">Degrees</label>
+                <input type="text" id="temperature" class="input-box"/>
+            </div>
+            <div class="col-direction">
+                <label for="typeOfTemp" class="side-heading">Input Type</label>
+                <select id="typeOfTemp" class="input-box">
+                    <option value="Celsius" selected>Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <div class="row-direction">
+            <div class="result">
+                <p class="side-heading">RESULT</p>
+                <p class="result-value" id="resultedValue"></p>
+            </div>
+            <div class="col-direction">
+                <label for="typeOfDesiredTemp" class="side-heading margin">Desired Type</label>
+                <select id="typeOfDesiredTemp" class="input-box">
+                    <option value="Celsius" selected>Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <hr/>
+        <div class="row-direction">
+            <button class="btn" id="convertBtn">Convert</button>
+        </div>
+    </div>
+
+
+><script src="Task3.js"></script>
+</body>
+</html>
